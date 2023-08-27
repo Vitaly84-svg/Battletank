@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\battletankgamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\battletankeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\development\\battletank\\definitions.battletank.h",
+            "d:\\unrealproject\\battletank\\battletank\\source\\battletank\\battletankgamemodebase.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\battletankgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

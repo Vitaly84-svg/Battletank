@@ -1,0 +1,13 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\battletank.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\battletankeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\development\\battletank\\definitions.battletank.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
