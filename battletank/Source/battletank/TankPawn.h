@@ -18,6 +18,10 @@ public:
 	
 	ATankPawn();
 
+	virtual void Tick(float DeltaTime) override;
+
+	void MoveForward(float Value);
+
 protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Component")
@@ -41,8 +45,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float RotationSpeed = 100.0f;
 
-public:	
-	
-	virtual void Tick(float DeltaTime) override;
-		
+	float targetForwardAxisValue = 0.0f;
+			
 };

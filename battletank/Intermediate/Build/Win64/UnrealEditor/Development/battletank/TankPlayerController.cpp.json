@@ -7,7 +7,9 @@
         "Includes": [
             "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\development\\battletank\\definitions.battletank.h",
             "d:\\unrealproject\\battletank\\battletank\\source\\battletank\\tankplayercontroller.h",
-            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\tankplayercontroller.generated.h"
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\tankplayercontroller.generated.h",
+            "d:\\unrealproject\\battletank\\battletank\\source\\battletank\\tankpawn.h",
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\tankpawn.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
