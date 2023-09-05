@@ -6,22 +6,27 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"
 
-/**
- * 
- */
+
+
 UCLASS()
 class BATTLETANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 
 public:
-	UPROPERTY()
-		class ATankPawn* TankPawn;
 
 	virtual void SetupInputComponent() override;
 
 protected:
+
+	UPROPERTY()
+	class ATankPawn* TankPawn;
+
 	virtual void BeginPlay() override;
 
-	void MoveForward(float Value);
+	void MoveForward(float AxisValue);
+
+	void MoveRight(float AxisValue);
+
+	void RotateRight(float AxisValue);
 };

@@ -37,16 +37,41 @@ ATankPawn::ATankPawn()
 
 void ATankPawn::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
+	Super::Tick(DeltaTime);	
 
-	FVector CurrentPosition = GetActorLocation();
-	FVector ForwardVector = GetActorForwardVector();
-	FVector movePosition = CurrentPosition + ForwardVector * MoveSpeed * targetForwardAxisValue * DeltaTime;
-	SetActorLocation(movePosition, true);
+	Movement(DeltaTime);
+
+	FRotator CurrentRotation = GetActorRotation();
+	float YawRotation = RotationSpeed * TargetRotateRightAxisValue * DeltaTime;
+	YawRotation += CurrentRotation.Yaw;
+	FRotator NewRotation = FRotator(0.0f, YawRotation, 0.0f);
+	SetActorRotation(NewRotation);
 }
 
-void ATankPawn::MoveForward(float Value)
+void ATankPawn::MoveForward(float AxisValue)
 {
-	targetForwardAxisValue = Value;
+	TargetForwardAxisValue = AxisValue;
+}
+
+void ATankPawn::MoveRight(float AxisValue)
+{
+	TargetRightAxisValue = AxisValue;
+}
+
+void ATankPawn::RotateRight(float AxisValue)
+{
+	TargetRotateRightAxisValue = AxisValue;
+}
+
+void ATankPawn::Movement(float DeltaTime)
+{
+	FVector CurrentPosition = GetActorLocation();
+	FVector ForwardVector = GetActorForwardVector();
+	FVector RightVector = GetActorRightVector();
+	
+	FVector ForwardMovement = ForwardVector * MoveSpeed * TargetForwardAxisValue * DeltaTime;
+	FVector RightMovement = RightVector * MoveSpeed * TargetRightAxisValue * DeltaTime;
+	FVector MovePosition = CurrentPosition + ForwardMovement + RightMovement;
+	SetActorLocation(MovePosition, true);
 }
 

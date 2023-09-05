@@ -43,7 +43,6 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATankPlayerController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Transformation" },
 		{ "IncludePath", "TankPlayerController.h" },
 		{ "ModuleRelativePath", "TankPlayerController.h" },
@@ -54,7 +53,7 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 		{ "ModuleRelativePath", "TankPlayerController.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn = { "TankPawn", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATankPlayerController, TankPawn), Z_Construct_UClass_ATankPawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn_MetaData)) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn = { "TankPawn", nullptr, (EPropertyFlags)0x0020080000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATankPlayerController, TankPawn), Z_Construct_UClass_ATankPawn_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATankPlayerController_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATankPlayerController_Statics::NewProp_TankPawn,
 	};
@@ -94,9 +93,9 @@ void EmptyLinkFunctionForGeneratedCodeTankPlayerController() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_battletank_Source_battletank_TankPlayerController_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ATankPlayerController, ATankPlayerController::StaticClass, TEXT("ATankPlayerController"), &Z_Registration_Info_UClass_ATankPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPlayerController), 3177860285U) },
+		{ Z_Construct_UClass_ATankPlayerController, ATankPlayerController::StaticClass, TEXT("ATankPlayerController"), &Z_Registration_Info_UClass_ATankPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATankPlayerController), 2019258664U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_battletank_Source_battletank_TankPlayerController_h_1014635809(TEXT("/Script/battletank"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_battletank_Source_battletank_TankPlayerController_h_2726499073(TEXT("/Script/battletank"),
 		Z_CompiledInDeferFile_FID_battletank_Source_battletank_TankPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_battletank_Source_battletank_TankPlayerController_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

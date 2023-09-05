@@ -20,7 +20,11 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
-	void MoveForward(float Value);
+	void MoveForward(float AxisValue);
+
+	void MoveRight(float AxisValue);
+
+	void RotateRight(float AxisValue);
 
 protected:
 	
@@ -45,6 +49,13 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float RotationSpeed = 100.0f;
 
-	float targetForwardAxisValue = 0.0f;
+private:
+
+	float TargetForwardAxisValue = 0.0f;
+
+	float TargetRightAxisValue = 0.0f;
+
+	float TargetRotateRightAxisValue = 0.0f;
 			
+	void Movement(float DeltaTime);
 };
