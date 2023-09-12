@@ -15,7 +15,12 @@
             "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\springarmcomponent.h",
             "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\springarmcomponent.generated.h",
             "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\camera\\cameracomponent.h",
-            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\cameracomponent.generated.h"
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\cameracomponent.generated.h",
+            "d:\\unrealproject\\battletank\\battletank\\source\\battletank\\tankplayercontroller.h",
+            "d:\\unrealproject\\battletank\\battletank\\intermediate\\build\\win64\\unrealeditor\\inc\\battletank\\tankplayercontroller.generated.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "d:\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\kismetmathlibrary.generated.h",
+            "d:\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

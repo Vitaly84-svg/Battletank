@@ -6,7 +6,7 @@
   [Adaptive Build] Excluded from battletank unity file: TankPawn.cpp, TankPlayerController.cpp
   Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
     Executing up to 6 processes, one per physical core
-    Requested 1,5 GB free memory per action, 8,29 GB available: limiting max parallel actions to 5
+    Requested 1,5 GB free memory per action, 8,45 GB available: limiting max parallel actions to 5
   Building 4 actions with 4 processes...
   [1/4] Compile TankPawn.cpp
   [2/4] Link UnrealEditor-battletank.lib
@@ -14,5 +14,5 @@
   [3/4] Link UnrealEditor-battletank.dll
      Создается библиотека D:\UnrealProject\Battletank\battletank\Intermediate\Build\Win64\UnrealEditor\Development\battletank\UnrealEditor-battletank.suppressed.lib и объект D:\UnrealProject\Battletank\battletank\Intermediate\Build\Win64\UnrealEditor\Development\battletank\UnrealEditor-battletank.suppressed.exp
   [4/4] WriteMetadata battletankEditor.target
-  Total time in Parallel executor: 2,80 seconds
-  Total execution time: 3,39 seconds
+  Total time in Parallel executor: 11,92 seconds
+  Total execution time: 12,49 seconds

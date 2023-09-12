@@ -17,6 +17,10 @@ public:
 
 	virtual void SetupInputComponent() override;
 
+	virtual void Tick(float DeltaSeconds) override;
+
+	FVector GetMousePosition() { return MousePosition; };
+
 protected:
 
 	UPROPERTY()
@@ -29,4 +33,6 @@ protected:
 	void MoveRight(float AxisValue);
 
 	void RotateRight(float AxisValue);
+
+	FVector MousePosition;
 };

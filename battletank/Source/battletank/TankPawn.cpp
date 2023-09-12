@@ -6,6 +6,8 @@
 #include "Components/BoxComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "TankPlayerController.h"
+#include "Kismet/KismetMathLibrary.h"
 
 
 
@@ -39,13 +41,35 @@ void ATankPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);	
 
+	//Tank movement
 	Movement(DeltaTime);
 
+	//Tank rotation
 	FRotator CurrentRotation = GetActorRotation();
 	float YawRotation = RotationSpeed * TargetRotateRightAxisValue * DeltaTime;
+	float LerpTankRotation = FMath::Lerp(TargetRotateRightAxisValue, LerpTankRotation, TurretRotationInterpolationKey);
+
+	//UE_LOG(LogTemp, Warning, TEXT("Non Lerp: %f, Lerp: %f"), TargetRotateRightAxisValue, LerpTankRotation);
+
 	YawRotation += CurrentRotation.Yaw;
 	FRotator NewRotation = FRotator(0.0f, YawRotation, 0.0f);
 	SetActorRotation(NewRotation);
+
+	//Turret rotation
+	if (TankController)
+	{
+		FVector MousePosition = TankController->GetMousePosition();
+		FRotator TargetRotation = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), MousePosition);
+		FRotator TurretRotation = TurretMesh->GetComponentRotation();
+		TargetRotation.Pitch = TurretRotation.Pitch;
+		TargetRotation.Roll = TurretRotation.Roll;
+
+		FRotator NewTurretRotation = FMath::Lerp(TurretRotation, TargetRotation, TurretRotationInterpolationKey);
+		
+		//UE_LOG(LogTemp, Warning, TEXT("TargetRotation: %s, LerpRotation: %s"), *TargetRotation.ToString(), *NewTurretRotation.ToString());
+
+		TurretMesh->SetWorldRotation(NewTurretRotation);
+	}
 }
 
 void ATankPawn::MoveForward(float AxisValue)
@@ -61,6 +85,12 @@ void ATankPawn::MoveRight(float AxisValue)
 void ATankPawn::RotateRight(float AxisValue)
 {
 	TargetRotateRightAxisValue = AxisValue;
+}
+
+void ATankPawn::BeginPlay()
+{
+	Super::BeginPlay();
+	TankController = Cast<ATankPlayerController>(GetController());
 }
 
 void ATankPawn::Movement(float DeltaTime)
