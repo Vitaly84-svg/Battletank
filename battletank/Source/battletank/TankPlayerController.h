@@ -34,5 +34,7 @@ protected:
 
 	void RotateRight(float AxisValue);
 
+	void Fire();
+
 	FVector MousePosition;
 };

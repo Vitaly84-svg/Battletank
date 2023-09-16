@@ -3,7 +3,7 @@
   Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealProject\Battletank).
   Building battletankEditor...
   Using Visual Studio 2022 14.30.30706 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  [Adaptive Build] Excluded from battletank unity file: TankPawn.cpp, TankPlayerController.cpp
+  [Adaptive Build] Excluded from battletank unity file: Cannon.cpp, GameStruct.cpp, TankPawn.cpp, TankPlayerController.cpp
   Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
     Executing up to 6 processes, one per physical core
     Requested 1,5 GB free memory per action, 8,45 GB available: limiting max parallel actions to 5
@@ -14,5 +14,5 @@
   [3/4] Link UnrealEditor-battletank.dll
      Создается библиотека D:\UnrealProject\Battletank\battletank\Intermediate\Build\Win64\UnrealEditor\Development\battletank\UnrealEditor-battletank.suppressed.lib и объект D:\UnrealProject\Battletank\battletank\Intermediate\Build\Win64\UnrealEditor\Development\battletank\UnrealEditor-battletank.suppressed.exp
   [4/4] WriteMetadata battletankEditor.target
-  Total time in Parallel executor: 11,92 seconds
-  Total execution time: 12,49 seconds
+  Total time in Parallel executor: 13,29 seconds
+  Total execution time: 13,86 seconds

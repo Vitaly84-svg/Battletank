@@ -9,6 +9,8 @@
 
 
 class UStaticMeshComponent;
+class ACannon;
+
 UCLASS()
 class BATTLETANK_API ATankPawn : public APawn
 {
@@ -25,6 +27,10 @@ public:
 	void MoveRight(float AxisValue);
 
 	void RotateRight(float AxisValue);
+
+	void Fire();
+
+	void SetupCannon(TSubclassOf<ACannon> NewCannonClass);
 
 protected:
 
@@ -44,6 +50,15 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Component")
 	class UCameraComponent* Camera;
+
+	UPROPERTY()
+	ACannon* Cannon;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cannon")
+	TSubclassOf<ACannon> CannonClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cannon")
+	class UArrowComponent* CannonSetupPoint;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	float MoveSpeed = 100.0f;
@@ -65,5 +80,9 @@ private:
 
 	float TargetRotateRightAxisValue = 0.0f;
 			
-	void Movement(float DeltaTime);
+	void MovementTank(float DeltaTime);
+
+	void RotationTank(float DeltaTime);
+
+	void RotationTurret();
 };

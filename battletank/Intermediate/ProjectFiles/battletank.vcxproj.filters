@@ -23,6 +23,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Config\HoloLens">
       <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
     </Filter>
@@ -45,6 +48,18 @@
       <Filter>Source\battletank</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\battletank\battletankGameModeBase.h">
+      <Filter>Source\battletank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\battletank\Cannon.cpp">
+      <Filter>Source\battletank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\battletank\Cannon.h">
+      <Filter>Source\battletank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\battletank\GameStruct.cpp">
+      <Filter>Source\battletank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\battletank\GameStruct.h">
       <Filter>Source\battletank</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\battletank\TankPawn.cpp">
